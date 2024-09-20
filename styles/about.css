@@ -1,0 +1,154 @@
+#about {
+  padding-block: 6.5rem 5.5rem;
+
+  & .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+
+    & img {
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+
+  }
+
+  & p {
+    text-align: center;
+    margin-top: 0.5rem;
+    font: var(--body-sm);
+  }
+
+  & .book-kit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 64px;
+
+    border: 1px solid lightgreen;
+
+    position: relative;
+    height: 319px;
+
+    & > * {
+      position: absolute;
+
+      &.book {
+        width: 158px;
+        height: 208px;
+        z-index: 1;
+      }
+
+      &:not(.book) {
+        max-height: 180px;
+        width: auto;
+        z-index: -1;
+      }
+
+      &.bookmark-yellow {
+        width: 58px;
+      }
+
+      &.bookmark-purple {
+        width: 58px;
+      }
+
+      &.pins {
+        width: 75px;
+        height: 85px;
+      }
+
+      &.arrow-01 {
+        width: 58px;
+        height: 10px;
+      }
+
+      &.arrow-02 {
+        width: 35px;
+        height: 42px;
+      }
+
+      &.arrow-03 {
+        width: 49px;
+        height: 51px;
+      }
+    }
+    
+    & span {
+      font: 400 0.625rem var(--raleway);
+      color: var(--text-body);
+    }
+  }
+}
+
+@media (width >= 80em) {
+  #about {
+    padding-block: 14.6875rem 19.5625rem;
+
+    & .title {
+      gap: 1rem;
+  
+      & img {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+
+    & p {
+      font: var(--body-md);
+    }
+
+    & .book-kit {
+      margin-top: 88px;
+
+      height: 920px;
+
+      & > * {
+        &.book {
+          width: 467px;
+          height: 617px;
+        }
+
+        &:not(.book) {
+          max-height: 536px;
+        }
+
+        &.bookmark-yellow {
+          width: 172px;
+        }
+
+        &.bookmark-purple {
+          width: 172px;
+        }
+
+        &.pins {
+          width: 222px;
+          height: 254px;
+        }
+
+        &.arrow-01 {
+          width: 175px;
+          height: 30px;
+        }
+
+        &.arrow-02 {
+          width: 105px;
+          height: 127px;
+        }
+
+        &.arrow-03 {
+          width: 145px;
+          height: 152px;
+        }
+      }
+
+      & span {
+        font: var(--body-md);
+        color: var(--text-title);
+      }
+    }
+  }
+}

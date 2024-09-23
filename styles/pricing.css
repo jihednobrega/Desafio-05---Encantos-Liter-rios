@@ -154,7 +154,35 @@
         position: absolute;
 
         &:not(:nth-child(2)) {
-          z-index: 1;
+          z-index: 0;
+
+          & .details {
+            & button {
+              position: relative;
+              overflow: hidden;
+              z-index: 0;
+
+              &::before {
+                background-color: var(--blue-mid);
+                content: "";
+                width: 0;
+                height: 0;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                transition: all 400ms ease;
+                z-index: -1;
+              }
+      
+              &:hover::before {
+                width: 250px;
+                height: 250px;
+                border-radius: 999px;
+              }
+            }
+          }
+          
         }
 
         & .inner-card {
@@ -193,6 +221,33 @@
               height: 50px;
               top: -50px;
               left: 32px;
+            }
+          }
+
+          & .details {
+            & button {
+              position: relative;
+              overflow: hidden;
+              z-index: 0;
+
+              &::before {
+                background-color: var(--pink-base);
+                content: "";
+                width: 0;
+                height: 0;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                transition: all 400ms ease;
+                z-index: -1;
+              }
+      
+              &:hover::before {
+                width: 250px;
+                height: 250px;
+                border-radius: 999px;
+              }
             }
           }
         }

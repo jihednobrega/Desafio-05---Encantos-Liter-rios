@@ -64,8 +64,6 @@ body {
   position: relative;
   margin-inline: auto;
   max-width: 1440px;
-
-  border: 1px solid deeppink;
 }
 
 .container > *:not(#about):not(.hero-background):not(#pricing):not(.footer-background):not(footer) {
@@ -192,4 +190,8 @@ li {
   h2 {
     font-size: 2rem;
   }
+}
+
+@keyframes show-content {
+  100% {}
 }

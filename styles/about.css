@@ -11,7 +11,6 @@
       width: 1.25rem;
       height: 1.25rem;
     }
-
   }
 
   & p {
@@ -86,7 +85,7 @@
 
 @media (width >= 80em) {
   #about {
-    padding-block: 14.6875rem 19.5625rem;
+    padding-block: 14.6875rem 17.375rem;
 
     & .title {
       gap: 1rem;

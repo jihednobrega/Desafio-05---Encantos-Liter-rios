@@ -64,7 +64,7 @@ body {
   border: 1px solid deeppink;
 }
 
-.container > *:not(#about):not(.hero-background) {
+.container > *:not(#about):not(.hero-background):not(#pricing):not(.footer-background) {
   padding-inline: 1.25rem;
 }
 
@@ -82,11 +82,22 @@ body {
   }
 }
 
+.footer-background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  z-index: -1;
+
+  object-fit: cover;
+}
+
 .desktop-only {
   display: none;
 }
 
-h1, h2 {
+h1, h2, h3 {
   color: var(--text-title);
 }
 
@@ -98,6 +109,10 @@ h1 {
 h2 {
   font: var(--title-sm);
   font-size: 1.5rem;
+}
+
+h3 {
+  font: var(--title-md);
 }
 
 a {
@@ -118,6 +133,8 @@ button {
   font: var(--button);
   color: var(--text-title);
   border: none;
+
+  cursor: pointer;
 }
 
 .flex {
@@ -136,8 +153,17 @@ button {
   gap: 2rem;
 }
 
+ul[role="list"] {
+  list-style: none;
+}
+
+li {
+  font: var(--body-xs);
+  color: var(--text-body);
+}
+
 @media (width >= 80em) {
-  .container > *:not(#about):not(.hero-background) {
+  .container > *:not(#about):not(.hero-background):not(#pricing):not(.footer-background) {
     padding-inline: 10rem;
   }
 

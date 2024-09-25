@@ -77,6 +77,7 @@ body {
   right: 0;
 
   z-index: -1;
+  animation: show-background 2000ms ease-in-out;
 
   & img {
     min-height: 464px;
@@ -192,6 +193,12 @@ li {
   }
 }
 
-@keyframes show-content {
-  100% {}
+@keyframes show-background {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

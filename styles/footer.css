@@ -103,7 +103,7 @@ footer {
           scale: 0;
           background-color: var(--shape-stroke);
           
-          transition: scale 400ms;
+          transition: scale 200ms;
           z-index: -1;
         }
         

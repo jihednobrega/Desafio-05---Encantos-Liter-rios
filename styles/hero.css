@@ -1,5 +1,7 @@
 #hero {
-  padding-block: 1.25rem 5.125rem;
+  padding-block: 1.25rem 0;
+
+  position: relative;
 
   & nav {
     justify-content: space-between;
@@ -24,13 +26,22 @@
     margin-top: 3rem;
     margin-inline: auto;
 
+    & h1 {
+      opacity: 0;
+      animation: show-content 2500ms 1000ms ease-in-out forwards;
+    }
+    
     & p {
       font-size: 0.875rem;
+      opacity: 0;
+      animation: show-content 2000ms 2200ms ease-in-out forwards;
     }
   }
 
   & section {
-    margin-top: 306px;
+    height: 251px;
+    margin-top: 206px;
+    padding-top: 80px;
     position: relative;
 
     & .subtitle {
@@ -41,9 +52,11 @@
 
       & div {
         display: inline;
+        color: var(--text-body);
+        opacity: 0.5;
 
         & span {
-          color: var(--blue-light);
+          font-weight: 600;
         }
       }
     }
@@ -56,6 +69,7 @@
       position: absolute;
       top: -50px;
       right: 21%;
+      opacity: 0;
     }
 
     & .ball {
@@ -66,6 +80,7 @@
       position: absolute;
       bottom: -50px;
       right: 7%;
+      opacity: 0;
     }
 
     & .ouija {
@@ -75,7 +90,44 @@
       
       position: absolute;
       bottom: -20px;
+      opacity: 0;
     }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 50%;
+      height: 50%;
+      left: 0;
+      bottom: 0;
+      filter: blur(350px);
+      background-color: var(--pink-low);
+      z-index: -3;
+    }
+  }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    left: 0;
+    bottom: 55rem;
+    filter: blur(300px);
+    background-color: var(--pink-low);
+    z-index: -3;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    right: 0;
+    bottom: 45rem;
+    filter: blur(400px);
+    background-color: var(--pink-low);
+    z-index: -3;
   }
 }
 
@@ -97,7 +149,9 @@
     }
 
     & section {
+      height: 400px;
       margin-top: 566px;
+      padding-top: 100px;
 
       & .subtitle {
         font-size: 2rem;
@@ -110,9 +164,10 @@
         rotate: 21deg;
         
         position: absolute;
-        top: -100px;
+        top: 0;
         right: 50%;
         transform: translateX(50%);
+        transition: all 1s ease;
       }
   
       & .ball {
@@ -121,8 +176,9 @@
         rotate: -15deg;
   
         position: absolute;
-        bottom: -75px;
+        bottom: 100px;
         right: -5%;
+        transition: opacity 1s ease, transform 1s ease;
       }
   
       & .ouija {
@@ -131,7 +187,89 @@
         rotate: 100deg;
         
         position: absolute;
-        bottom: -100px;
+        bottom: 80px;
+        transition: opacity 1s ease, transform 1s ease;
+      }
+
+      & .book-animation {
+        transition: opacity 1s ease;
+
+        & span {
+          transition: color 1s ease;
+        }
+      }
+
+      & .ball-animation {
+        transition: opacity 1s  ease;
+
+        & span {
+          transition: color 1s ease;
+        }
+      }
+
+      & .ouija-animation {
+        transition: opacity 1s  ease;
+
+        & span {
+          transition: color 1s ease;
+        }
+      }
+
+      &:hover {
+        & .book {
+          opacity: 1;
+  
+          &:hover {
+            transform: rotate(10deg) translateX(50%) scale(1.1);
+          }
+        }
+  
+        & .book-animation {
+          opacity: 1;
+  
+          & span {
+            color: var(--blue-light);
+          }
+        }
+    
+        & .ball {
+          opacity: 1;
+          transition: opacity 1s 1600ms ease;
+
+  
+          &:hover {
+            transform: rotate(10deg) scale(1.1);
+          }
+        }
+  
+        & .ball-animation {
+          opacity: 1;
+          transition: opacity 1s 1600ms ease;
+  
+          & span {
+            color: var(--blue-light);
+            transition: color 1s 1600ms ease;
+          }
+        }
+    
+        & .ouija {
+          opacity: 1;
+          transition: opacity 1s 800ms ease;
+  
+          &:hover {
+            transform: rotate(10deg) scale(1.1);
+          }
+        }
+  
+        & .ouija-animation {
+          opacity: 1;
+          transition: opacity 1s 800ms ease;
+  
+          & span {
+            color: var(--blue-light);
+            transition: color 1s 800ms ease;
+          }
+        }
       }
     }
 
@@ -162,5 +300,10 @@
       }
     }
   }
+}
 
+@keyframes show-content {
+  100% {
+    opacity: 1;
+  }
 }

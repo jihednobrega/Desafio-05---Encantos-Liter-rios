@@ -12,7 +12,7 @@
       height: 1.25rem;
 
       background-color: transparent;
-      filter: drop-shadow(0px 0px 22px var(--pink-base));
+      filter: drop-shadow(0px 0px 1.375rem var(--pink-base));
     }
   }
 
@@ -28,95 +28,95 @@
     justify-content: center;
     align-items: center;
 
-    margin-top: 64px;
+    margin-top: 4rem;
 
     position: relative;
-    height: 319px;
+    height: 19.9375rem;
 
     & > * {
       position: absolute;
 
       &.book {
-        width: 158px;
-        height: 208px;
+        width: 9.875rem;
+        height: 13rem;
         z-index: 1;
       }
 
       &:not(.book) {
-        max-height: 180px;
+        max-height: 11.25rem;
         width: auto;
         z-index: -1;
       }
 
       &.bookmark-yellow {
-        width: 58px;
+        width: 3.625rem;
 
         animation: bookmark-yellow-animation cubic-bezier(0.36, 0.01, 0, 1.25) forwards;
         animation-timeline: view();
-        animation-range: 120px 300px;
+        animation-range: 7.5rem 18.75rem;
       }
 
       &.bookmark-purple {
-        width: 58px;
+        width: 3.625rem;
         z-index: -2;
 
         animation: bookmark-purple-animation cubic-bezier(0.36, 0.01, 0, 1.25) forwards;
         animation-timeline: view();
-        animation-range: 120px 300px;
+        animation-range: 7.5rem 18.75rem;
       }
 
       &.pins {
-        width: 75px;
-        height: 85px;
+        width: 4.6875rem;
+        height: 5.3125rem;
 
         animation: pins-animation cubic-bezier(0.36, 0.01, 0, 1.25) forwards;
         animation-timeline: view();
-        animation-range: 100px 250px;
+        animation-range: 6.25rem 15.625rem;
       }
 
       &.arrow-01 {
-        width: 58px;
-        height: 10px;
+        width: 3.625rem;
+        height: 0.625rem;
 
         animation: arrow-01-animation cubic-bezier(0.36, 0.01, 0, 1.25) forwards;
         animation-timeline: view();
-        animation-range: 50px 210px;
+        animation-range: 3.125rem 13.125rem;
       }
 
       &.book-text-01 {
         animation: book-text-01-animation cubic-bezier(0.36, 0.01, 0, 1.25) forwards;
         animation-timeline: view();
-        animation-range: 20px 210px;
+        animation-range: 1.25rem 13.125rem;
       }
 
       &.arrow-02 {
-        width: 35px;
-        height: 42px;
+        width: 2.1875rem;
+        height: 2.625rem;
 
         animation: arrow-02-animation cubic-bezier(0.36, 0.01, 0, 1.25) forwards;
         animation-timeline: view();
-        animation-range: 80px 230px;
+        animation-range: 5rem 14.375rem;
       }
 
       &.book-text-02 {
         animation: book-text-02-animation cubic-bezier(0.36, 0.01, 0, 1.25) forwards;
         animation-timeline: view();
-        animation-range: 50px 210px;
+        animation-range: 3.125rem 13.125rem;
       }
 
       &.arrow-03 {
-        width: 49px;
-        height: 51px;
+        width: 3.0625rem;
+        height: 3.1875rem;
 
         animation: arrow-03-animation cubic-bezier(0.36, 0.01, 0, 1.25) forwards;
         animation-timeline: view();
-        animation-range: 100px 230px;
+        animation-range: 6.25rem 14.375rem;
       }
 
       &.book-text-03 {
         animation: book-text-03-animation cubic-bezier(0.36, 0.01, 0, 1.25) forwards;
         animation-timeline: view();
-        animation-range: 80px 210px;
+        animation-range: 5rem 13.125rem;
       }
     }
     
@@ -133,7 +133,7 @@
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-      filter: blur(350px);
+      filter: blur(21.875rem);
       background-color: var(--pink-low);
       z-index: -3;
     }
@@ -142,58 +142,58 @@
 
 @keyframes bookmark-yellow-animation {
   to {
-    translate: 88px -44px;
+    translate: 5.5rem -2.75rem;
     rotate: 10deg;
   }
 }
 
 @keyframes bookmark-purple-animation {
   to {
-    translate: 121px -8px;
+    translate: 7.5625rem -0.5rem;
     rotate: 19deg;
   }
 }
 
 @keyframes pins-animation {
   to {
-    translate: -88px 88px;
+    translate: -5.5rem 5.5rem;
     rotate: -10deg;
   }
 }
 
 @keyframes arrow-01-animation {
   to {
-    translate: -96px -105px;
+    translate: -6rem -6.5625rem;
   }
 }
 
 @keyframes book-text-01-animation {
   to {
-    translate: -126px -122px;
+    translate: -7.875rem -7.625rem;
   }
 }
 
 @keyframes arrow-02-animation {
   to {
-    translate: -125px 39px;
+    translate: -7.8125rem 2.4375rem;
   }
 }
 
 @keyframes book-text-02-animation {
   to {
-    translate: -126px 5px;
+    translate: -7.875rem 0.3125rem;
   }
 }
 
 @keyframes arrow-03-animation {
   to {
-    translate: 108px 98px;
+    translate: 6.75rem 6.125rem;
   }
 }
 
 @keyframes book-text-03-animation {
   to {
-    translate: 86px 131px;
+    translate: 5.375rem 8.1875rem;
   }
 }
 
@@ -216,50 +216,50 @@
     }
 
     & .book-kit {
-      margin-top: 88px;
+      margin-top: 5.5rem;
 
-      height: 920px;
+      height: 57.5rem;
 
       & > * {
         animation: none !important;
         transition: all 800ms cubic-bezier(0.36, 0.01, 0, 1.25);
 
         &.book {
-          width: 467px;
-          height: 617px;
+          width: 29.1875rem;
+          height: 38.5625rem;
         }
 
         &:not(.book) {
-          max-height: 536px;
+          max-height: 33.5rem;
         }
 
         &.bookmark-yellow {
-          width: 172px;
+          width: 10.75rem;
         }
 
         &.bookmark-purple {
-          width: 172px;
+          width: 10.75rem;
           z-index: -2;
         }
 
         &.pins {
-          width: 222px;
-          height: 254px;
+          width: 13.875rem;
+          height: 15.875rem;
         }
 
         &.arrow-01 {
-          width: 175px;
-          height: 30px;
+          width: 14.6875rem;
+          height: 1.875rem;
         }
 
         &.arrow-02 {
-          width: 105px;
-          height: 127px;
+          width: 6.5625rem;
+          height: 7.9375rem;
         }
 
         &.arrow-03 {
-          width: 145px;
-          height: 152px;
+          width: 9.0625rem;
+          height: 9.5rem;
         }
       }
 
@@ -271,42 +271,42 @@
       &:hover {
         & > * {
           &.bookmark-yellow {
-            translate: 260px -130px;
+            translate: 16.25rem -8.125rem;
             rotate: 10deg;
           }
 
           &.bookmark-purple {
-            translate: 360px -25px;
+            translate: 22.5rem -1.5625rem;
             rotate: 19deg;
           }
 
           &.pins {
-            translate: -260px 260px;
+            translate: -16.25rem 16.25rem;
             rotate: -10deg;
           }
 
           &.arrow-01 {
-            translate: -285px -310px;
+            translate: -19.8125rem -19.375rem;
           }
 
           &.book-text-01 {
-            translate: -375px -350px;
+            translate: -26.875rem -22.375rem;
           }
 
           &.arrow-02 {
-            translate: -370px 115px;
+            translate: -23.125rem 7.1875rem;
           }
 
           &.book-text-02 {
-            translate: -375px 15px;
+            translate: -23.4375rem 0.9375rem;
           }
 
           &.arrow-03 {
-            translate: 320px 290px;
+            translate: 20rem 18.125rem;
           }
 
           &.book-text-03 {
-            translate: 255px 390px;
+            translate: 15.9375rem 24.375rem;
           }
         }
       }

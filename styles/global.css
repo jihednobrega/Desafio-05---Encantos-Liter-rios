@@ -63,7 +63,7 @@ body {
 .container {
   position: relative;
   margin-inline: auto;
-  max-width: 1440px;
+  max-width: 90em;
 }
 
 .container > *:not(#about):not(.hero-background):not(#pricing):not(.footer-background):not(footer) {
@@ -80,13 +80,13 @@ body {
   animation: show-background 2000ms ease-in-out;
 
   & img {
-    min-height: 464px;
+    min-height: 29rem;
     object-fit: cover;
   }
 }
 
 .footer-background {
-  height: 415px;
+  height: 25.9375rem;
   position: absolute;
   bottom: 0;
   left: 0;

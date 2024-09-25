@@ -1,8 +1,8 @@
 #pricing {
-  padding-block: 104px;
+  padding-block: 6.5rem;
 
   background: url(../assets/background/pricing-background.png);
-  background-size: auto 712px;
+  background-size: auto 44.5rem;
   background-repeat: repeat;
   background-position: center;
 
@@ -18,10 +18,10 @@
   & .cards-wrapper {
     width: 100%;
     max-width: fit-content;
-    height: 400px;
+    height: 25rem;
     margin-top: 3rem;
     margin-inline: auto;
-    padding-inline: 52px;
+    padding-inline: 3.25rem;
     display: grid;
     grid-template-areas: "mensal semestral anual";
     align-items: center;
@@ -31,12 +31,12 @@
     & .card {
       background-color: var(--shape-base);
       border: 1px solid var(--shape-stroke);
-      border-radius: 24px;
+      border-radius: 1.5rem;
       height: 100%;
       
       & .inner-card {
         height: 100%;
-        width: 278px;
+        width: 17.375rem;
         
         padding: 2rem 2rem 1.75rem;
         
@@ -56,20 +56,20 @@
               font: var(--tag);
               color: var(--text-body);
               background-color: var(--shape-stroke);
-              padding: 9px 20px;
+              padding: 0.5625rem 1.25rem;
               border-radius: 999px;
               
               position: absolute;
-              top: 24px;
-              right: 24px;
+              top: 1.5rem;
+              right: 1.5rem;
             }
           }
 
           & .price {
-            margin-top: 24px;
+            margin-top: 1.5rem;
             display: flex;
             flex-direction: column;
-            gap: 8px;
+            gap: 0.5rem;
 
             & h3 span {
               color: var(--text-title);
@@ -114,29 +114,29 @@
       & .items {
         display: flex;
         flex-direction: column;
-        gap: 12px;
+        gap: 0.75rem;
         
         & .item {
           display: flex;
-          gap: 8px;
+          gap: 0.5rem;
           
           & img {
-            width: 14px;
-            height: 14px;
+            width: 0.875rem;
+            height: 0.875rem;
           }
         }
       }
 
       & button {
         width: 100%;
-        max-height: 40px;
-        margin-top: 24px;
+        max-height: 2.5rem;
+        margin-top: 1.5rem;
 
         font: var(--button);
         color: var(--text-title);
 
-        padding-block: 12px;
-        border-radius: 8px;
+        padding-block: 0.75rem;
+        border-radius: 0.5rem;
         background-color: var(--blue-dark);
       }
     }
@@ -150,7 +150,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    filter: blur(200px);
+    filter: blur(12.5rem);
     background-color: var(--shape-base);
     z-index: -3;
   }
@@ -158,14 +158,14 @@
 
 @media (width >= 80em) {
   #pricing {
-    padding-block: 194px 302px;
+    padding-block: 12.125rem 18.875rem;
     background-size: cover;
     background-repeat: no-repeat;
     overflow-x: visible;
 
     & .cards-wrapper {
-      max-width: 1050px;
-      height: 606px;
+      max-width: 65.625rem;
+      height: 37.875rem;
       margin-top: 3.5rem;
       margin-left: 0;
       margin-inline: auto;
@@ -175,9 +175,9 @@
       position: relative;
 
       & .card {
-        width: 288px;
-        height: 416px;
-        margin-top: -50px;
+        width: 18rem;
+        height: 26rem;
+        margin-top: -3.125rem;
 
         position: absolute;
         transition: all 600ms ease;
@@ -205,8 +205,8 @@
               }
       
               &:hover::before {
-                width: 250px;
-                height: 250px;
+                width: 15.625rem;
+                height: 15.625rem;
                 border-radius: 999px;
               }
             }
@@ -224,17 +224,17 @@
             transition: rotate 600ms;
           
             &:nth-child(3) {
-              width: 26px;
-              height: 26px;
-              top: -26px;
-              left: -26px;
+              width: 1.625rem;
+              height: 1.625rem;
+              top: -1.625rem;
+              left: -1.625rem;
             }
 
             &:nth-child(4) {
-              width: 13px;
-              height: 13px;
-              top: 13px;
-              left: -30px;
+              width: 0.8125rem;
+              height: 0.8125rem;
+              top: 0.8125rem;
+              left: -1.875rem;
             }
           }
         }
@@ -246,10 +246,10 @@
             position: absolute;
           
             &:nth-child(3) {
-              width: 45px;
-              height: 50px;
-              top: -50px;
-              left: 32px;
+              width: 2.8125rem;
+              height: 3.125rem;
+              top: -3.125rem;
+              left: 2rem;
             }
           }
 
@@ -273,8 +273,8 @@
               }
       
               &:hover::before {
-                width: 250px;
-                height: 250px;
+                width: 15.625rem;
+                height: 15.625rem;
                 border-radius: 999px;
               }
             }
@@ -287,26 +287,26 @@
             transition: rotate 600ms;
             
             &:nth-child(3) {
-              width: 23px;
-              height: 23px;
-              bottom: -16px;
-              right: -50px;
+              width: 1.4375rem;
+              height: 1.4375rem;
+              bottom: -1rem;
+              right: -3.125rem;
             }
 
             &:nth-child(4) {
-              width: 11px;
-              height: 11px;
-              bottom: -23px;
+              width: 0.6875rem;
+              height: 0.6875rem;
+              bottom: -1.4375rem;
               right: 0;
             }
           }
         }
 
         &:hover {
-          margin-top: -80px;
+          margin-top: -5rem;
             
           background-color: var(--shape-hover);
-          box-shadow: 0px 0px 66px rgba(53, 139, 185, 0.1);
+          box-shadow: 0px 0px 4.125rem rgba(53, 139, 185, 0.1);
 
           &:nth-child(1):hover ~ .card:nth-child(3),
           &:nth-child(2):hover ~ .card:nth-child(3) {
@@ -351,14 +351,14 @@
   
   @keyframes mensal-card-animation {
     to {
-      translate: -290px 60px;
+      translate: -18.125rem 3.75rem;
       rotate: -8deg;
     }  
   }
   
   @keyframes anual-card-animation {
     to {
-      translate: 290px 60px;
+      translate: 18.125rem 3.75rem;
       rotate: 8deg;
     }  
   }

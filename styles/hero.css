@@ -13,15 +13,15 @@
     & button {
       align-items: center;
       justify-content: center;
-      padding: 12px 20px;
-      border-radius: 8px;
+      padding: 0.75rem 1.25rem;
+      border-radius: 0.5rem;
       background-color: var(--pink-dark);
-      max-height: 40px;
+      max-height: 2.5rem;
     }
   }
 
   & .title {
-    max-width: 568px;
+    max-width: 35.5rem;
     text-align: center;
     margin-top: 3rem;
     margin-inline: auto;
@@ -39,9 +39,9 @@
   }
 
   & section {
-    height: 251px;
-    margin-top: 206px;
-    padding-top: 80px;
+    height: 15.6875rem;
+    margin-top: 12.875rem;
+    padding-top: 5rem;
     position: relative;
 
     & .subtitle {
@@ -62,34 +62,34 @@
     }
 
     & .book {
-      width: 40px;
-      height: 40px;
+      width: 2.5rem;
+      height: 2.5rem;
       rotate: 15deg;
       
       position: absolute;
-      top: -50px;
+      top: -3.125rem;
       right: 21%;
       opacity: 0;
     }
 
     & .ball {
-      width: 40px;
-      height: 40px;
+      width: 2.5rem;
+      height: 2.5rem;
       rotate: 15deg;
 
       position: absolute;
-      bottom: -50px;
+      bottom: -3.125rem;
       right: 7%;
       opacity: 0;
     }
 
     & .ouija {
-      width: 32px;
-      height: 32px;
+      width: 2rem;
+      height: 2rem;
       rotate: -30deg;
       
       position: absolute;
-      bottom: -20px;
+      bottom: -1.25rem;
       opacity: 0;
     }
 
@@ -100,7 +100,7 @@
       height: 50%;
       left: 0;
       bottom: 0;
-      filter: blur(350px);
+      filter: blur(21.875rem);
       background-color: var(--pink-low);
       z-index: -3;
     }
@@ -113,7 +113,7 @@
     height: 30%;
     left: 0;
     bottom: 55rem;
-    filter: blur(300px);
+    filter: blur(18.75rem);
     background-color: var(--pink-low);
     z-index: -3;
   }
@@ -125,7 +125,7 @@
     height: 40%;
     right: 0;
     bottom: 45rem;
-    filter: blur(400px);
+    filter: blur(25rem);
     background-color: var(--pink-low);
     z-index: -3;
   }
@@ -140,6 +140,7 @@
     }
 
     & .title {
+      max-width: 41rem;
       margin-top: 10.25rem;
       gap: 2rem;
 
@@ -149,9 +150,9 @@
     }
 
     & section {
-      height: 400px;
-      margin-top: 566px;
-      padding-top: 100px;
+      height: 25rem;
+      margin-top: 35.375rem;
+      padding-top: 6.25rem;
 
       & .subtitle {
         font-size: 2rem;
@@ -159,8 +160,8 @@
       }
 
       & .book {
-        width: 80px;
-        height: 80px;
+        width: 5rem;
+        height: 5rem;
         rotate: 21deg;
         
         position: absolute;
@@ -171,23 +172,23 @@
       }
   
       & .ball {
-        width: 72px;
-        height: 72px;
+        width: 4.5rem;
+        height: 4.5rem;
         rotate: -15deg;
   
         position: absolute;
-        bottom: 100px;
+        bottom: 6.25rem;
         right: -5%;
         transition: opacity 1s ease, transform 1s ease;
       }
   
       & .ouija {
-        width: 80px;
-        height: 80px;
+        width: 5rem;
+        height: 5rem;
         rotate: 100deg;
         
         position: absolute;
-        bottom: 80px;
+        bottom: 5rem;
         transition: opacity 1s ease, transform 1s ease;
       }
 
@@ -293,8 +294,8 @@
         }
 
         &:hover::before {
-          width: 100px;
-          height: 100px;
+          width: 6.25rem;
+          height: 6.25rem;
           border-radius: 999px;
         }
       }
